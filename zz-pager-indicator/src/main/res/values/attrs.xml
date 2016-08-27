@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ZzPagerIndicator">
+        <attr name="zz_indicator_type" format="enum">
+            <enum name="round_point" value="0" />
+            <enum name="tab_with_text" value="1" />
+            <enum name="tab_with_icon" value="2" />
+            <enum name="tab_with_icon_and_text" value="3" />
+        </attr>
+        <!--for tab-->
+        <attr name="zz_unselect_tab_text_size" format="dimension|reference" />
+        <attr name="zz_unselect_tab_text_color" format="color|reference" />
+        <attr name="zz_select_tab_text_size" format="dimension|reference" />
+        <attr name="zz_select_tab_text_color" format="color|reference" />
+        <attr name="zz_underline_color" format="color|reference" />
+        <attr name="zz_underline_height" format="dimension|reference" />
+        <attr name="zz_underline_padding" format="dimension|reference" />
+        <attr name="zz_tab_padding" format="dimension|reference" />
+        <attr name="zz_tab_icon_size" format="dimension|reference" />
+        <attr name="zz_show_underline" format="boolean" />
+        <attr name="zz_should_tab_expand" format="boolean" />
+
+        <!--for point-->
+        <attr name="zz_select_point_size" format="dimension|reference" />
+        <attr name="zz_unselect_point_size" format="dimension|reference" />
+        <attr name="zz_select_point_color" format="color|reference" />
+        <attr name="zz_unselect_point_color" format="color|reference" />
+        <attr name="zz_point_spacing" format="dimension|reference" />
+
+        <attr name="zz_is_need_scale_in_px" format="boolean" />
+
+    </declare-styleable>
+</resources>

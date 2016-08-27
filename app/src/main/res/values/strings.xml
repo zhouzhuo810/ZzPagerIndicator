@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ZzPagerIndicator</string>
+    <string name="round_point_demo">Round Point Demo</string>
+    <string name="tab_with_text_demo">Tab With Text Demo</string>
+    <string name="tab_with_icon_demo">Tab With Icon Demo</string>
+    <string name="tab_with_icon_and_text_demo">Tab With Icon And Text Demo</string>
+</resources>

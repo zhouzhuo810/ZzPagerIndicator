@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="me.zhouzhuo.zzpagerindicatordemo.MainActivity">
+
+    <me.zhouzhuo.zzpagerindicator.ZzPagerIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:zz_indicator_type="tab_with_icon"
+        app:zz_should_tab_expand="true"
+        app:zz_show_underline="true"
+        app:zz_tab_icon_size="40dp"
+        app:zz_tab_padding="2dp"
+        app:zz_underline_height="3dp"
+        app:zz_underline_padding="10dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

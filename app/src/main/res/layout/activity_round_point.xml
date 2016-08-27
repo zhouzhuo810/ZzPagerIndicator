@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.zhouzhuo.zzpagerindicatordemo.MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+    <!--dp-->
+    <me.zhouzhuo.zzpagerindicator.ZzPagerIndicator
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        app:zz_indicator_type="round_point"
+        app:zz_point_spacing="8dp"
+        app:zz_select_point_color="#0f0"
+        app:zz_select_point_size="12dp"
+        app:zz_unselect_point_color="#f0f"
+        app:zz_unselect_point_size="8dp" />
+
+    <!--dp, same size-->
+    <me.zhouzhuo.zzpagerindicator.ZzPagerIndicator
+        android:id="@+id/indicator_same_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        app:zz_indicator_type="round_point"
+        app:zz_point_spacing="8dp"
+        app:zz_select_point_color="#f0f"
+        app:zz_select_point_size="10dp"
+        app:zz_unselect_point_color="#0f0"
+        app:zz_unselect_point_size="10dp" />
+
+    <!--px-->
+    <me.zhouzhuo.zzpagerindicator.ZzPagerIndicator
+        android:id="@+id/indicator_px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:zz_indicator_type="round_point"
+        app:zz_is_need_scale_in_px="true"
+        app:zz_point_spacing="18px"
+        app:zz_select_point_color="#fff"
+        app:zz_select_point_size="18px"
+        app:zz_unselect_point_color="#888"
+        app:zz_unselect_point_size="24px" />
+
+</RelativeLayout>
