@@ -21,7 +21,7 @@ Maven:
 ```
 <br>
 
-<h3>What does it look like ?
+<h3>What does it look like ?</h3>
 
 
 ![这里写图片描述](http://upload-images.jianshu.io/upload_images/2788864-85f1e32cbc548aa1.gif?imageMogr2/auto-orient/strip)
@@ -33,7 +33,7 @@ Maven:
 ![这里写图片描述](http://upload-images.jianshu.io/upload_images/2788864-50ff4390fb291754.gif?imageMogr2/auto-orient/strip)
 
 <br>
-<h3>How to use it ?
+<h3>How to use it ?</h3>
 
 一、准备工作
 
