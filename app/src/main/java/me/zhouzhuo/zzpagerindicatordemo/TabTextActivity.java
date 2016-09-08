@@ -2,6 +2,8 @@ package me.zhouzhuo.zzpagerindicatordemo;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -10,12 +12,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 import me.zhouzhuo.zzpagerindicator.ZzPagerIndicator;
+import me.zhouzhuo.zzpagerindicator.adapter.ZzFragmentPagerAdapter;
 import me.zhouzhuo.zzpagerindicatordemo.adapter.MyPagerAdapter;
+import me.zhouzhuo.zzpagerindicatordemo.fragment.FragmentOne;
+import me.zhouzhuo.zzpagerindicatordemo.fragment.FragmentThree;
+import me.zhouzhuo.zzpagerindicatordemo.fragment.FragmentTwo;
 
 /**
  * Created by zz on 2016/8/23.
  */
-public class TabTextActivity extends Activity {
+public class TabTextActivity extends FragmentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,27 +30,16 @@ public class TabTextActivity extends Activity {
         ZzPagerIndicator indicator = (ZzPagerIndicator) findViewById(R.id.indicator);
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
 
-        //initViews
-        List<ImageView> views = new ArrayList<>();
-        for (int i = 0; i < 3; i++) {
-            ImageView iv = new ImageView(this);
-            iv.setScaleType(ImageView.ScaleType.CENTER_CROP);
-            views.add(iv);
-        }
-
-        //initDatas
-        List<String> beanList = new ArrayList<>();
-        beanList.add("http://p2.so.qhmsg.com/bdr/_240_/t010df481c03c2770e2.jpg");
-        beanList.add("http://p0.so.qhmsg.com/bdr/_240_/t01a10cf974ae39d3aa.jpg");
-        beanList.add("http://p4.so.qhmsg.com/bdr/_240_/t0120236a7d521b6f34.jpg");
-
-        //set adapter
-        MyPagerAdapter adapter = new MyPagerAdapter(this, views, beanList);
+        //initial fragments
+        List<Fragment> fragments = new ArrayList<>();
+        fragments.add(new FragmentOne());
+        fragments.add(new FragmentTwo());
+        fragments.add(new FragmentThree());
+        ZzFragmentPagerAdapter adapter = new ZzFragmentPagerAdapter(getSupportFragmentManager(), fragments, new String[] {"QQ", "微博", "微信"});
         viewPager.setAdapter(adapter);
 
         //attach indicator to viewpager
         indicator.setViewPager(viewPager);
-
 
     }
 }
