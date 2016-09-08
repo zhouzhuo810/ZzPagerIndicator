@@ -1,11 +1,12 @@
-# ZzPagerIndicator
+<h2>ZzPagerIndicator</h2>
+
 A powerful custom indicator for Android ViewPager.
 
-<br/>
+<br>
 Gradle:
 
 ```
-compile 'me.zhouzhuo.zzpagerindicator:zz-pager-indicator:1.0.0'
+compile 'me.zhouzhuo.zzpagerindicator:zz-pager-indicator:1.0.1'
 ```
 
 Maven:
@@ -14,13 +15,13 @@ Maven:
 <dependency>
   <groupId>me.zhouzhuo.zzpagerindicator</groupId>
   <artifactId>zz-pager-indicator</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <type>pom</type>
 </dependency>
 ```
-<br/>
+<br>
 
-<h3>What does it look like ?</h3>
+<h3>What does it look like ?
 
 
 ![这里写图片描述](http://upload-images.jianshu.io/upload_images/2788864-85f1e32cbc548aa1.gif?imageMogr2/auto-orient/strip)
@@ -31,8 +32,8 @@ Maven:
 
 ![这里写图片描述](http://upload-images.jianshu.io/upload_images/2788864-50ff4390fb291754.gif?imageMogr2/auto-orient/strip)
 
-<br/>
-<h3>How to use it ?</h3>
+<br>
+<h3>How to use it ?
 
 一、准备工作
 
@@ -116,6 +117,8 @@ public class MyPagerAdapter extends ZzBasePagerAdapter<ImageView, String> {
 
 2.java代码
 
+（1）ImageView
+
 ```java
         ZzPagerIndicator indicator = (ZzPagerIndicator) findViewById(R.id.indicator);
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
@@ -136,6 +139,24 @@ public class MyPagerAdapter extends ZzBasePagerAdapter<ImageView, String> {
 
         //set adapter
         MyPagerAdapter adapter = new MyPagerAdapter(this, views, beanList);
+        viewPager.setAdapter(adapter);
+
+        //attach indicator to viewpager
+        indicator.setViewPager(viewPager);
+```
+
+（2）Fragment
+
+```java
+        ZzPagerIndicator indicator = (ZzPagerIndicator) findViewById(R.id.indicator);
+        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
+
+        //initial fragments
+        List<Fragment> fragments = new ArrayList<>();
+        fragments.add(new FragmentOne());
+        fragments.add(new FragmentTwo());
+        fragments.add(new FragmentThree());
+        ZzFragmentPagerAdapter adapter = new ZzFragmentPagerAdapter(getSupportFragmentManager(), fragments, new String[] {"QQ", "微博", "微信"});
         viewPager.setAdapter(adapter);
 
         //attach indicator to viewpager
@@ -198,6 +219,7 @@ public class MyPagerAdapter extends ZzBasePagerAdapter<ImageView, String> {
 
     </declare-styleable>
 ```
+
 
 
 
