@@ -24,13 +24,13 @@ Maven:
 <h3>What does it look like ?</h3>
 
 
-![这里写图片描述](http://upload-images.jianshu.io/upload_images/2788864-85f1e32cbc548aa1.gif?imageMogr2/auto-orient/strip)
+![这里写图片描述](https://github.com/zhouzhuo810/ZzPagerIndicator/blob/master/point.gif)
 
-![这里写图片描述](http://upload-images.jianshu.io/upload_images/2788864-30c889369ce39df0.gif?imageMogr2/auto-orient/strip)
+![这里写图片描述](https://github.com/zhouzhuo810/ZzPagerIndicator/blob/master/icon.gif)
 
-![这里写图片描述](http://upload-images.jianshu.io/upload_images/2788864-9b23ce229ea55686.gif?imageMogr2/auto-orient/strip)
+![这里写图片描述](https://github.com/zhouzhuo810/ZzPagerIndicator/blob/master/text.gif)
 
-![这里写图片描述](http://upload-images.jianshu.io/upload_images/2788864-50ff4390fb291754.gif?imageMogr2/auto-orient/strip)
+![这里写图片描述](https://github.com/zhouzhuo810/ZzPagerIndicator/blob/master/icon_text.gif)
 
 <br>
 <h3>How to use it ?</h3>
